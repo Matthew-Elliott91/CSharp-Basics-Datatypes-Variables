@@ -6,4 +6,5 @@ Console.WriteLine("Hello, World!");
 
 string myFriendsName;
 myFriendsName = "Matthew";
+myFriendsName = "John";
 Console.WriteLine(myFriendsName);
