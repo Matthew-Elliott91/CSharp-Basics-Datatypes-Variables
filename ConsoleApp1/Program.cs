@@ -12,6 +12,7 @@ byte age = 255;
 short linkedinConnections = 32550;
 long phoneNumber = 07307891642;
 float pi2 = 3.14f;
+char myFavCharacter = 'B';  
 
 myFriendsName = "John";
 
@@ -52,9 +53,9 @@ Console.WriteLine(strTwo); */
 // Small Calculator app
 
 // Addition
-Console.WriteLine("Enter a number please");
+//Console.WriteLine("Enter a number please");
 
-double firstNumber = 0;
+/*double firstNumber = 0;
 double secondNumber = 0;
 
 string userInput = Console.ReadLine();
@@ -67,6 +68,72 @@ Console.WriteLine("Enter another number please");
 string userInput2 = Console.ReadLine();
 secondNumber = double.Parse(userInput2);
 double addedNumbers = firstNumber + secondNumber;
-Console.WriteLine($"{firstNumber} + {secondNumber} = {addedNumbers}" );
+Console.WriteLine($"{firstNumber} + {secondNumber} = {addedNumbers}" );*/
+
+// Implicit Conversion
+
+int myInt = 32;
+double myDouble = myInt;
+long myLong = 1234567898312345678;
+
+float myFloat = 123.123f;
+
+myDouble = myFloat;
+
+//myFloat = myDouble;
+
+// explicit converstion you cant cast to a smaller data type without getting errors
+
+/*int myInt2 = (int)myLong;
+Console.WriteLine(myInt2);*/
+
+// Convert Class and Method to convert data types
+
+string myBoolString = "true";
+
+bool myBool = Convert.ToBoolean(myBoolString);
+
+
+// Conversion Helpers Parse and Convert
+
+string NumberString = "123";
+int result = int.Parse(NumberString);
+
+
+// Implicit and Explicit Variables
+
+var myFavTeam = "Liverpook";
+
+var myFavNumber = 11;
+
+int num1 = 10;
+int num2 = 20;
+int num3 = 30;
+int average = (num1 + num2 + num3) / 3;
+
+// String Formating
+
+int num = 10;
+double price = 19.95;
+string name = "Matthew";
+
+// Interpolation
+Console.WriteLine($"The Number is {num}");
+
+// Concatination
+Console.WriteLine("The Number is " + num);
+
+// String Formating
+Console.WriteLine("The Number is {0}, and the price is {1}, and my name is {2}", num, price, name);
+
+
+// Special Characters in strings
+
+string str1 = "This is a \"string\" with \na slash \\ and a colon:";
+
+Console.WriteLine(str1);
+
+string str2 = "Hello\n\tWorld!";
+Console.WriteLine(str2);
 // Stops Console closing
 Console.ReadKey();
